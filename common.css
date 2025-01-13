@@ -1,0 +1,83 @@
+:root {
+  --color-main-black: #161718;
+  --color-main-white: #fff;
+  --color-main-blue: #005eb8;
+
+  --font-weight-bold: 700;
+
+  --font-size-biggest: 40px;
+  --font-size-big: 32px;
+  --font-size-middle: 24px;
+  --font-size-small: 16px;
+}
+
+header {
+  background-color: darkseagreen;
+}
+
+
+.header-inner, .main-section-inner, .footer-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-main-black);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* 글자 크기 */
+.section-title {
+  font-size: var(--font-size-middle);
+  color: var(--color-main-blue);
+}
+.big-title {
+  font-size: var(--font-size-biggest);
+}
+
+.content-text {
+  font-size: var(--font-size-small);
+}
+
+/* 글자  투명하게 */
+.text-hide {
+  font-size: 0;
+}
+
+/* 버튼 디자인 */
+.btn-blue, .btn-transparent, .btn-white {
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  width: 180px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: var(--font-weight-bold);
+  border-radius: 4px;
+}
+
+.btn-blue {
+  background-color: var(--color-main-blue);
+  color: var(--color-main-white);
+}
+
+.btn-white {
+  background-color: var(--color-main-white);
+  color: var(--color-main-blue);
+  border: 1px solid var(--color-main-blue);
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--color-main-white);
+  border: 1px solid var(--color-main-white);
+}

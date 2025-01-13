@@ -1,0 +1,101 @@
+
+
+/* ######################## header start ######################## */
+header {}
+
+header a {}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo a {
+  display: block;
+  width: 144px;
+  height: 54px;
+  background-image: url(images/whtie-logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+.gnb-container {
+  display: flex;
+  align-items: center;
+}
+
+.gnb-container li a {
+  color: var(--color-main-white);
+  font-weight: var(--font-weight-bold);
+}
+
+.gnb-list {}
+
+.gnb-item {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 60px;
+}
+
+.gnb-item a {}
+
+.gnb-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gnb-icon-item {
+  padding: 5px 15px;
+}
+
+.gnb-icon-item:not(:first-child) a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.btn-direct-sponsorship {
+  width: 140px;
+}
+
+.btn-ham-menu {
+  background-image: url(images/btn_allmenu.png);
+}
+
+.btn-mypage {
+  background-image: url(images/btn_mypage.png);
+}
+
+.btn-heart {
+  background-image: url(images/btn_cart.png);
+}
+/* ######################## header end ######################## */
+
+/* ######################## main start ######################## */
+/* #mainBannerSection.main-section01 start */
+#mainBannerSection {height: 800px; background-color: dodgerblue;}
+/* #mainBannerSection.main-section01 end */
+
+/* #introChildSection.main-section02 start */
+#introChildSection {}
+.intro-child-txt {}
+.intro-child-title {}
+.intro-child-name {
+  line-height: 50px;
+}
+.intro-child-content {
+  color: #3d3e3f;
+  line-height: 25px;
+}
+.intro-child-btn-container {}
+.btn-see-detail {}
+.btn-support {}
+.intro-child-img {}
+/* #introChildSection.main-section02 end */
+/* ######################## main end ######################## */
