@@ -78,24 +78,416 @@ header a {}
 /* ######################## header end ######################## */
 
 /* ######################## main start ######################## */
-/* #mainBannerSection.main-section01 start */
+main {}
+/* s : #mainBannerSection.main-section01 */
 #mainBannerSection {height: 800px; background-color: dodgerblue;}
-/* #mainBannerSection.main-section01 end */
+/* e : #mainBannerSection.main-section01 */
 
-/* #introChildSection.main-section02 start */
-#introChildSection {}
-.intro-child-txt {}
+/* s : #introChildSection.main-section02 */
+.main-section-wrap {
+  /* background-image: url(images/bg_main_line_top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; */
+}
+#introChildSection {
+  position: relative;
+  height: 800px;
+  margin-top: 30px;
+}
+
+#introChildSection:before {
+  content: '';
+  width: 489px;
+  height: 508px;
+  background: url(images/bg_main_circle_object_01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  bottom: -82px;
+  right: -5px;
+  z-index: -1;
+}
+
+#introChildSection:after {
+  content: '';
+  width: 1153px;
+  height: 565px;
+  background-color: #f4f7fb;
+  position: absolute;
+  left: 0;
+  bottom: 65px;
+  z-index: -1;
+}
+
+.intro-child-txt {
+  float: left;
+  margin-top: 70px;
+}
+
 .intro-child-title {}
 .intro-child-name {
-  line-height: 50px;
+  margin: 60px 0 30px;
 }
+
+.intro-child-name span {
+  color: var(--color-main-blue);
+}
+
 .intro-child-content {
   color: #3d3e3f;
-  line-height: 25px;
+  margin-bottom: 60px;
 }
+
 .intro-child-btn-container {}
-.btn-see-detail {}
+.intro-child-btn-container button {
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.btn-see-detail {
+  margin-right: var(--margin-right-main-btn);
+}
 .btn-support {}
+
+.intro-child-img-container {
+  float: right;
+  width: 485px;
+  position: relative;
+}
+
+.intro-child-img-container img {
+  max-width: 100%;
+}
 .intro-child-img {}
-/* #introChildSection.main-section02 end */
+.intro-child-more {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+/* e : #introChildSection.main-section02 */
+
+/* s : #UseDonationSection.main-section03 */
+#UseDonationSection {
+  position: relative;
+  margin-top: 50px;
+}
+
+#UseDonationSection:before {
+    content: '';
+    background-color: #D8ECF1;
+    height: 650px;
+    width: 85%;
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    z-index: -1;
+}
+
+#UseDonationSection .main-section-inner {
+  position: relative;
+}
+
+#UseDonationSection .main-section-inner:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 390px;
+  background-color: var(--color-main-blue);
+  top: 60px;
+  left: 0;
+  z-index: -1;
+}
+
+.d-percent-container {}
+
+.d-percent-img-box {
+  float: left;
+  width: 432px;
+  height: 432px;
+  background-image: url(images/img_sponsorship_percent.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin: 0 50px 0 50px;
+}
+
+.d-percent-txt-box {
+  padding-top: 80px;
+}
+.d-percent-title {
+  margin-bottom: 30px;
+  color: var(--color-main-white);
+}
+
+.d-percent-content {
+  color: #bbdde6;
+}
+
+.d-percent-btn-box {
+  margin-top: 35px;
+}
+.btn-see-detail {}
+.btn-report {}
+
+.donation-honest-container {
+  padding-top: 100px;
+}
+
+.d-honest-title {
+  color: var(--color-main-blue);
+}
+
+.d-honest-content {
+  width: 580px;
+}
+.d-honest-cerficicate-list {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  padding: 0;
+}
+
+.d-honest-cerficicate-item {
+  width: 180px;
+  height: 180px;
+  background-color: var(--color-main-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-honest-img-box {
+  width: 100%;
+  height: 88px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.charity-navigator-img {
+  background-image: url(images/img_certificate_logo1.png);
+}
+
+.transparency-award-img {
+  background-image: url(images/img_certificate_logo3.png);
+}
+
+.charity-watch-top-img {
+  background-image: url(images/img_certificate_logo5.png);
+}
+.d-hoest-cerf-txt {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 10px 0 0;
+}
+/* e : #UseDonationSection.main-section03 */
+
+/* s : #yourSupportSection.main-section04 */
+#yourSupportSection {
+  margin-top: 200px;
+}
+#yourSupportSection .main-section-inner {}
+
+.your-support-title {}
+
+.your-support-txt {}
+
+.support-slide-container {
+  margin: 150px 0 105px;
+  position: relative;
+}
+
+.support-slide-container:before {
+  content: '';
+  background-image: url(images/bg_special_object.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 538px;
+  height: 728px;
+  position: absolute;
+  top: -80px;
+  left: -200px;
+  z-index: -1
+}
+
+.support-slide-list {
+  padding: 0;
+}
+
+.support-slide-item {
+  width: 384px;
+  height: 559px;
+  background-image: url(images/img_child_0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+}
+
+.support-slide-item-inner {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.support-slide-title {
+  font-size: var(--font-size-big);
+  margin: 0;
+  color: var(--color-main-white);
+}
+
+.support-slide-txt {
+  font-size: var(--font-size-small);
+  color: #e0e0e0;
+}
+
+.support-btn-container {
+  display: flex;
+}
+
+.support-btn:first-child {
+  margin-right: 10px;
+}
+
+.support-btn:first-child a {
+  width: 145px;
+}
+
+.support-btn:last-child a {
+  width: 165px;
+}
+
+.support-btn .btn-transparent {}
+.support-btn .btn-blue {}
+
+.support-slide-move {}
+
+.support-slide-move button {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.support-slide-move .prev {
+  background-image: url(images/btn_swipe_left_arrow.png);
+  margin-right: 15px;
+}
+
+.support-slide-move .next {
+  background-image: url(images/btn_swipe_right_arrow.png);
+}
+/* e : #yourSupportSection.main-section04 */
+
+/* s : #WhenIGrowSection.main-section05 */
+#WhenIGrowSection {
+  position: relative;
+}
+
+#WhenIGrowSection:after {
+  content: '';
+  background-image: url(images/bg_main_line_mid.png);
+  width: 100%;
+  height: 1198px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  bottom: -485px;
+  left: 0;
+  z-index: 1;
+}
+
+#WhenIGrowSection:before {
+  content: '';
+  width: 86%;
+  height: 728px;
+  background: #d8ecf1;
+  position: absolute;
+  z-index: -1;
+  top: 370px;
+  left: 0;
+}
+
+#WhenIGrowSection .main-section-inner {
+  margin-top: 200px;
+}
+
+.section05-title {
+  position: relative;
+}
+
+.section05-title:after {
+  content: '';
+  background-image: url(images/bg_txt_whenigrowup.png);
+  width: 1245px;
+  height: 254px;
+  background-repeat: none;
+  background-position: 0 0;
+  background-size: 100%;
+  position: absolute;
+  top: -80px;
+  right: -480px;
+}
+
+.section05-subtitle {
+  font-size: var(--font-size-middle);
+}
+
+.child-interview-box {
+  margin: 100px 0 0 190px;
+}
+
+.child-interview-box img {}
+
+.welove-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.welove-item {
+  background-color: var(--color-main-white);
+  padding: 200px 35px 40px;
+  background-repeat: no-repeat;
+  background-size: auto 120px;
+  background-position: top 40px right 40px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* .welove-item-inner {
+  margin-top: 150px;
+} */
+
+.welove-item:nth-child(1) {
+  background-image: url(images/img_love_jesus.png);
+}
+
+.welove-item:nth-child(2) {
+  background-image: url(images/img_love_children.png);
+}
+
+.welove-item:nth-child(3) {
+  background-image: url(images/img_love_church.png);
+}
+
+.welove-item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--font-size-big);
+  color: var(--color-main-blue);
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.welove-item-txt {
+  font-size: var(--font-size-small);
+  line-height: 30px;
+  margin-top: 20px;
+}
+/* e : #WhenIGrowSection.main-section05 */
 /* ######################## main end ######################## */

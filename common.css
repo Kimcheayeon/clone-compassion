@@ -9,6 +9,8 @@
   --font-size-big: 32px;
   --font-size-middle: 24px;
   --font-size-small: 16px;
+
+  --margin-right-main-btn: 20px;
 }
 
 header {
@@ -33,19 +35,40 @@ ul, ol {
 button {
   border: none;
   background-color: transparent;
+  padding: 0;
 }
 
-/* 글자 크기 */
+
+/* 공통 */
 .section-title {
+  display: inline-block;
+  position: relative;
   font-size: var(--font-size-middle);
   color: var(--color-main-blue);
 }
+
+.section-title:after {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 1px;
+  background-color: var(--color-main-blue);
+  bottom: -10px;
+  right: 0;
+}
+
 .big-title {
   font-size: var(--font-size-biggest);
+  line-height: 55px;
 }
 
 .content-text {
   font-size: var(--font-size-small);
+  line-height: 25px;
+}
+
+.main-section-inner {
+  height: 100%;
 }
 
 /* 글자  투명하게 */
@@ -68,6 +91,7 @@ button {
 .btn-blue {
   background-color: var(--color-main-blue);
   color: var(--color-main-white);
+  border: 1px solid var(--color-main-blue);
 }
 
 .btn-white {
@@ -80,4 +104,28 @@ button {
   background-color: transparent;
   color: var(--color-main-white);
   border: 1px solid var(--color-main-white);
+}
+
+/* 더보기 화살표 */
+.more-btn-arrow {
+  position: relative;
+  border-bottom: 1px solid var(--color-main-black);
+  padding-bottom: 6px;
+}
+
+.more-btn-arrow:after {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: var(--color-main-black);
+  position: absolute;
+  right: 4px;
+  bottom: -2px;
+  transform: rotate(-45deg);
+}
+
+.more-btn-arrow a {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  padding: 0 50px 6px 0;
 }
