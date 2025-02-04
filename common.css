@@ -2,6 +2,8 @@
   --color-main-black: #161718;
   --color-main-white: #fff;
   --color-main-blue: #005eb8;
+  --color-main-yellow: #ffd100;
+  --color-main-gray: #3d3e3f;
 
   --font-weight-bold: 700;
 
@@ -11,6 +13,12 @@
   --font-size-small: 16px;
 
   --margin-right-main-btn: 20px;
+}
+
+
+html, body {
+  overflow-x: hidden;  /* 가로 스크롤 제거 */
+  width: 100%; /* 가로 너비 제한 */
 }
 
 header {

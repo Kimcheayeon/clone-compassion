@@ -492,11 +492,43 @@ main {}
 /* e : #WhenIGrowSection.main-section05 */
 
 /* s : #storySection.main-section06 */
-#storySection {}
+#storySection {
+  margin-top: 150px;
+  position: relative;
+}
+
+#storySection:after {
+  content: '';
+  background-image: url(images/bg_main_line_bot.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2550px;
+  height: 889px;
+  position: absolute;
+  bottom: -600px;
+  right: -500px;
+}
+
 .story-title {}
 .section06-title {}
 .story-content-container {}
-.raise-series-box {}
+
+.raise-series-box {
+  position: relative;
+}
+
+.raise-series-box:before {
+  content: '';
+  background-image: url(images/bg_half_circle_object.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 393px;
+  height: 324px;
+  position: absolute;
+  bottom: 75px;
+  left: -250px;
+}
+
 .raise-seires-img {
   width: 792px;
   height: 480px;
@@ -515,7 +547,7 @@ main {}
   width: 480px;
   height: 480px;
   background-color: red;
-  border: 1px solid #000;
+  position: relative;
 }
 
 .story-content-txt-inner {
@@ -525,6 +557,8 @@ main {}
 .story-content-txt b {
   font-size: var(--font-size-big);
   position: relative;
+  line-height: 45px;
+  word-break: keep-all;
 }
 
 .story-content-txt b:after {
@@ -543,20 +577,91 @@ main {}
   margin: 60px 0 30px;
 }
 
+.story-content-btn {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
 .story-content-txt button {}
-.raise-series-txt {}
-.raise-series-txt b {}
-.raise-series-txt hr {}
-.raise-series-txt p {}
+
+.raise-series-txt {
+  position: absolute;
+  right: 0px;
+  bottom: -55px;
+  background-color: var(--color-main-blue);
+  box-shadow: 0px 6px 14px -2px rgba(0, 0, 0, 0.25);
+}
+
+
+.raise-series-txt b {
+  color: var(--color-main-white);
+}
+
+.raise-series-txt b:after {
+  background-color: var(--color-main-yellow);
+}
+
+.raise-series-txt p {
+  color: #bbdde6;
+}
+
 .raise-series-txt button {}
-.challenge-trip-box {}
-.challenge-trip-txt {}
+.challenge-trip-box {
+  position: relative;
+  margin-top: 150px;
+}
+
+.challenge-trip-box:before {
+  content: '';
+  position: absolute;
+  bottom: -90px;
+  left: -70px;
+  background-image: url(images/bg_txt_ourstory.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 673px;
+  height: 248px;
+}
+
+.challenge-trip-box:after {
+  content: '';
+  background-image: url(images/bg_main_circle_object_02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 489px;
+  height: 622px;
+  position: absolute;
+  bottom: -290px;
+  right: -65px;
+  z-index: -2;
+}
+
+.challenge-trip-txt {
+  background-color: var(--color-main-yellow);
+  box-shadow: 0px 6px 14px -2px rgba(0, 0, 0, 0.25);
+}
+
 .challenge-trip-txt b {}
+
+.challenge-trip-txt b:after {
+  background-color: var(--color-main-blue);
+}
 .challenge-trip-txt hr {}
-.challenge-trip-txt p {}
-.challenge-trip-txt button {}
+
+.challenge-trip-txt p {
+  color: var(--color-main-gray);
+}
+
+.challenge-trip-txt .btn-transparent {
+  border: 1px solid var(--color-main-gray);
+  color: var(--color-main-gray);
+}
 
 .challenge-trip-img {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  z-index: -1;
   width: 792px;
   height: 480px;
   overflow: hidden;
