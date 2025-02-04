@@ -490,4 +490,80 @@ main {}
   margin-top: 20px;
 }
 /* e : #WhenIGrowSection.main-section05 */
+
+/* s : #storySection.main-section06 */
+#storySection {}
+.story-title {}
+.section06-title {}
+.story-content-container {}
+.raise-series-box {}
+.raise-seires-img {
+  width: 792px;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+
+.raise-seires-img img {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+}
+
+.story-content-txt {
+  width: 480px;
+  height: 480px;
+  background-color: red;
+  border: 1px solid #000;
+}
+
+.story-content-txt-inner {
+  padding: 40px;
+}
+
+.story-content-txt b {
+  font-size: var(--font-size-big);
+  position: relative;
+}
+
+.story-content-txt b:after {
+  content: '';
+  width: 56px;
+  height: 4px;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}
+
+.story-content-txt p {
+  font-size: var(--font-size-small);
+  line-height: 24px;
+  margin: 60px 0 30px;
+}
+
+.story-content-txt button {}
+.raise-series-txt {}
+.raise-series-txt b {}
+.raise-series-txt hr {}
+.raise-series-txt p {}
+.raise-series-txt button {}
+.challenge-trip-box {}
+.challenge-trip-txt {}
+.challenge-trip-txt b {}
+.challenge-trip-txt hr {}
+.challenge-trip-txt p {}
+.challenge-trip-txt button {}
+
+.challenge-trip-img {
+  width: 792px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.challenge-trip-img img {
+  width: 100%;
+}
+/* e : #storySection.main-section06 */
 /* ######################## main end ######################## */
