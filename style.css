@@ -1,8 +1,8 @@
 /* ######################## scroll-animation start ######################## */
 .scroll-animation {
   position: fixed;
-  bottom: 150px;
-  left: 0;
+  bottom: 180px;
+  left: 30px;
   color: #205eac;
   display: flex;
   transform: rotateZ(-90deg);
@@ -18,31 +18,39 @@
 
 .scroll-animation .more-btn-arrow {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 5px;
+  left: -80px;
   padding: 0;
-  width: 65px;
+  width: 60px;
   border-color: #205eac;
-  /* animation-name: scrollAnimation;
+  animation-name: scrollAnimation;
   animation-duration: 1s;
   animation-direction: normal;
   animation-iteration-count: infinite;
-  animation-timing-function: ; */
+  animation-timing-function: linear;
 }
 
 .scroll-animation span {
   font-weight: var(--font-weight-bold);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .scroll-animation .more-btn-arrow:after {
   left: 4px;
   transform: rotate(45deg);
+  height: 10px;
 }
 
 @keyframes scrollAnimation {
-  0% {}
-  100% {}
+  0% {
+    left: -80px;
+  }
+  50% {
+    left: -90px;
+  }
+  100% {
+    left: -80px;
+  }
 }
 /* ######################## scroll-animation end ######################## */
 
@@ -337,7 +345,38 @@ header a {}
 /* ######################## main start ######################## */
 main {}
 /* s : #mainBannerSection.main-section01 */
-#mainBannerSection {height: 856px; background-color: dodgerblue;}
+#mainBannerSection {}
+.banner-btn-left {}
+.banner-btn-right {}
+.main-banner-container {
+  width: 100vw;
+  height: 856px;
+  position: relative;
+}
+
+.main-banner-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-banner-item {
+  float: left;
+}
+.main-banner-item a {
+  display: block;
+}
+.main-banner-item:nth-child(1) a {
+  background-image: url(images/main-banner01.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  width: 100%;
+  height: 856px;
+}
+.main-banner-item:nth-child(2) a {}
+.main-banner-item:nth-child(3) a {}
+.main-banner-item:nth-child(4) a {}
 /* e : #mainBannerSection.main-section01 */
 
 /* s : #introChildSection.main-section02 */
