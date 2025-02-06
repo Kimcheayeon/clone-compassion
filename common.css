@@ -4,6 +4,8 @@
   --color-main-blue: #005eb8;
   --color-main-yellow: #ffd100;
   --color-main-gray: #3d3e3f;
+  --color-footer-gray: #8d8d8d;
+  --color-hover-blue: #003f77;
 
   --font-weight-bold: 700;
 
@@ -19,11 +21,13 @@
 html, body {
   overflow-x: hidden;  /* 가로 스크롤 제거 */
   width: 100%; /* 가로 너비 제한 */
+  /* height: 100%; */
 }
 
 header {
-  background-color: darkseagreen;
+  /* background-color: darkseagreen; */
 }
+
 
 
 .header-inner, .main-section-inner, .footer-inner {
@@ -136,4 +140,31 @@ button {
   font-size: 14px;
   font-weight: var(--font-weight-bold);
   padding: 0 50px 6px 0;
+}
+
+/* btn hover */
+.btn-hv-bluetxt, .btn-hv-bluetxt:hover,
+.btn-hv-blueback, .btn-hv-blueback:hover,
+.btn-hv-translate, .btn-hv-translate:hover,
+.btn-hv-whiteback, .btn-hv-whiteback:hover {
+  transition: 0.3s;
+}
+
+.btn-hv-bluetxt:hover {
+  color: var(--color-hover-blue);
+  border-color: var(--color-hover-blue);
+  transition: 0.3s;
+}
+
+.btn-hv-blueback:hover {
+  background-color: var(--color-hover-blue);
+  border-color: var(--color-hover-blue);
+}
+
+.btn-hv-translate:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-hv-whiteback:hover {
+  background-color: var(--color-main-white);
 }

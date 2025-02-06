@@ -1,7 +1,168 @@
+/* ######################## scroll-animation start ######################## */
+.scroll-animation {
+  position: fixed;
+  bottom: 150px;
+  left: 0;
+  color: #205eac;
+  display: flex;
+  transform: rotateZ(-90deg);
+  align-items: center;
+  gap: 15px;
+}
 
+.scroll-animation-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.scroll-animation .more-btn-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 65px;
+  border-color: #205eac;
+  /* animation-name: scrollAnimation;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ; */
+}
+
+.scroll-animation span {
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+}
+
+.scroll-animation .more-btn-arrow:after {
+  left: 4px;
+  transform: rotate(45deg);
+}
+
+@keyframes scrollAnimation {
+  0% {}
+  100% {}
+}
+/* ######################## scroll-animation end ######################## */
+
+/* ######################## fix-newsletter start ######################## */
+.fix-newsletter {
+  display: none;
+  width: 570px;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  background-color: var(--color-main-white);
+  z-index: 99;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 2px 2px 6px 2px rgb(102 102 102 / 65%);
+}
+
+.newletter-close {
+  background-image: url(images/btn_top_ad_close_type_blue.png);
+  width: 15px;
+  height: 15px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.fix-newsletter-inner {
+  position: relative;
+}
+
+.newletter-icon {
+  background-image: url(images/icon_newsletter.png);
+  width: 34px;
+  height: 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.fix-newsletter-inner span {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-main-black);
+}
+
+.newsletter-btn-container {
+  margin: 20px 0;
+}
+
+.newsletter-btn-container button {}
+
+.newsletter-btn-container button:first-child {
+  margin-right: 20px;
+}
+
+.fix-newsletter-inner p {
+  color: #9d9c9c;
+  margin: 0;
+}
+/* ######################## fix-newsletter end ######################## */
+
+/* ######################## fix-nav start ######################## */
+.fix-nav {
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  background-color: var(--color-main-blue);
+  width: 550px;
+  z-index: 99;
+  padding: 10px 0;
+  border-radius: 30px;
+  box-shadow: 2px 2px 6px 2px rgb(102 102 102 / 65%);
+}
+
+.fix-nav-inner {
+  margin: 0;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.fix-nav-item {
+  width: 30%;
+}
+
+.fix-nav-item a {
+  text-align: center;
+}
+
+.fix-nav-icon {}
+.fix-nav-icon img {
+  height: 60px;
+}
+
+.fix-nav-item span {
+  margin-top: 7px;
+  display: block;
+  color: var(--color-main-white);
+  font-weight: var(--font-weight-bold);
+}
+/* ######################## fix-nav end ######################## */
 
 /* ######################## header start ######################## */
 header {}
+
+.header {
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 header a {}
 
@@ -9,16 +170,16 @@ header a {}
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .header-logo a {
   display: block;
+}
+
+.header-logo img {
   width: 144px;
   height: 54px;
-  background-image: url(images/whtie-logo.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: contain;
 }
 
 .gnb-container {
@@ -75,12 +236,108 @@ header a {}
 .btn-heart {
   background-image: url(images/btn_cart.png);
 }
+
+/* s : header-scroll-inner */
+.header-scroll {
+  background-color: var(--color-main-white);
+  display: none;
+}
+
+.header-scroll .gnb-item a {
+  color: var(--color-main-black);
+}
+
+.header-scroll .btn-ham-menu {
+  background-image: url(images/btn_allmenu_active.png);
+}
+
+.header-scroll .btn-mypage {
+  background-image: url(images/btn_mypage_active.png);
+}
+
+.header-scroll .btn-heart {
+  background-image: url(images/btn_cart_active.png);
+}
+/* e : header-scroll-inner */
+
+/* s : gnb-sub */
+.gnb-sub-list {
+  background-color: var(--color-main-white);
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e0e0e0;
+  display: none;
+}
+
+.gnb-sub-item {
+  width: 1200px;
+  margin: 0 auto;
+  display: none;
+}
+
+.gnb-sub-item-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+.gnb-sub-title {
+  width: 270px;
+}
+
+.gnb-sub-title b {
+  font-size: var(--font-size-middle);
+}
+
+.gnb-sub-title p {
+  color: var(--color-footer-gray);
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.gnb-sub-category {
+  padding: 0;
+  flex-grow: 1;
+}
+
+.gnb-sub-category li {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.gnb-sub-category li:last-child {
+  margin-bottom: 0;
+}
+
+.gnb-sub-category li a:hover {
+  color: var(--color-main-blue);
+}
+
+.gnb-sub-category li a {
+  color: var(--color-main-gray);
+}
+
+.gnb-sub-banner {
+  width: 270px;
+  height: 360px;
+  overflow: hidden;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 90px;
+}
+
+.gnb-sub-banner img {
+  width: 100%;
+}
+/* e : gnb-sub */
+
 /* ######################## header end ######################## */
 
 /* ######################## main start ######################## */
 main {}
 /* s : #mainBannerSection.main-section01 */
-#mainBannerSection {height: 800px; background-color: dodgerblue;}
+#mainBannerSection {height: 856px; background-color: dodgerblue;}
 /* e : #mainBannerSection.main-section01 */
 
 /* s : #introChildSection.main-section02 */
@@ -507,6 +764,7 @@ main {}
   position: absolute;
   bottom: -600px;
   right: -500px;
+  z-index: -1;
 }
 
 .story-title {}
@@ -671,4 +929,250 @@ main {}
   width: 100%;
 }
 /* e : #storySection.main-section06 */
+
+/* s : #quickLinksection.main-section07 */
+#quickLinksection {
+  background-color: #f4f7fb;
+  padding: 50px 50px;
+  margin-top: 200px;
+}
+
+.quick-link-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.quick-link-item {
+  width: 384px;
+  height: 288px;
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: top 43px right 40px;
+}
+
+.quick-link-item a {
+  color: var(--color-main-white);
+  display: block;
+  padding: 50px 30px;
+}
+
+.quick-link-item b {
+  font-size: var(--font-size-middle);
+}
+
+.quick-link-item p {
+  color: #71b2c9;
+  font-size: var(--font-size-small);
+  margin: 30px 0 60px;
+  line-height: 24px;
+}
+
+.quick-link-item .more-btn-arrow {
+  border-color: var(--color-main-white);
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+}
+
+.quick-link-item .more-btn-arrow:after {
+  background-color: var(--color-main-white);
+}
+
+.quick-link-item:nth-child(1) {
+  background-color: #0086bf;
+  background-image: url(images/icn_business.png);
+}
+
+.quick-link-item:nth-child(2) {
+  background-color: #005eb8;
+  background-image: url(images/icn_church.png);
+}
+
+.quick-link-item:nth-child(3) {
+  background-color: #003f77;
+  background-image: url(images/icn_main_store.png);
+}
+
+/* e : #quickLinksection.main-section07 */
 /* ######################## main end ######################## */
+
+/* ######################## footer start ######################## */
+footer {
+  background-color: #3a3a3a;
+  color: var(--color-footer-gray);
+}
+.footer-inner {}
+.ft-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ft-nav-list {
+  display: flex;  
+  gap: 40px;
+  padding: 0;
+}
+
+.ft-nav-item {
+  position: relative;
+}
+
+.ft-nav-item:not(:last-child):after {
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: #707070;
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+}
+
+.ft-nav-item a {
+  color: var(--color-footer-gray);
+  font-size: 14px;
+}
+
+.ft-nav-item a:hover {
+  color: var(--color-main-white);
+}
+
+.ft-worldwide {
+  font-size: 14px;
+  width: 248px;
+  height: 56px;
+  border-right: 1px solid #4c4e51;
+  border-left: 1px solid #4c4e51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-worldwide button {
+  color: var(--color-footer-gray);
+  position: relative;
+  padding-right: 60px;
+  cursor: pointer;
+}
+
+.ft-worldwide button:after {
+  content: '';
+  background-image: url(images/btn_worldwide_plus.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+}
+
+footer hr {
+  border: none;
+  border-bottom: 1px solid #4c4e51;
+  margin: 0;
+}
+
+.ft-btm {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ft-logo {}
+
+.ft-info {
+  flex-grow: 1;
+  margin-left: 100px;
+}
+
+.ft-info b, .ft-info span {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ft-name {
+  color: var(--color-main-white);
+}
+
+
+.ft-address, .ft-ceo {
+  margin-bottom: 10px;
+}
+
+.ft-address {}
+
+.ft-biznum {}
+
+.ft-ceo {}
+
+.ft-tell {}
+
+.ft-email a {
+  color: var(--color-footer-gray);
+}
+
+.ft-copyright {
+  margin-top: 30px;
+}
+
+.ft-sns-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.ft-sns-item a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ft-youtube a {
+  background-image: url(images/btn_footer_youtube.png);
+  width: 32px;
+  height: 20px;
+}
+
+.ft-insta a {
+  background-image: url(images/btn_footer_instagram.png);
+  width: 20px;
+  height: 20px;
+}
+
+.ft-facebook a {
+  background-image: url(images/btn_footer_facebook.png);
+  width: 11px;
+  height: 20px;
+}
+
+.ft-blog a {
+  background-image: url(images/btn_footer_naverblog.png);
+  width: 23px;
+  height: 20px;
+}
+
+.ft-kakao a {
+  background-image: url(images/btn_footer_kakaoch.png);
+  width: 20px;
+  height: 20px;
+}
+
+.ft-naver a {
+  background-image: url(images/btn_footer_naverpost.png);
+  width: 15px;
+  height: 20px;
+}
+
+.ft-happybean a {
+  background-image: url(images/btn_footer_happybean.png);
+  width: 18px;
+  height: 20px;
+}
+/* ######################## footer start ######################## */
