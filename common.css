@@ -22,6 +22,9 @@ html, body {
   overflow-x: hidden;  /* 가로 스크롤 제거 */
   width: 100%; /* 가로 너비 제한 */
   /* height: 100%; */
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 header {
