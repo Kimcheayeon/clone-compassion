@@ -170,6 +170,7 @@ header {}
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 999;
 }
 
 header a {}
@@ -348,35 +349,32 @@ main {}
 #mainBannerSection {}
 .banner-btn-left {}
 .banner-btn-right {}
-.main-banner-container {
-  width: 100vw;
-  height: 856px;
-  position: relative;
-}
+.main-banner-container {}
 
 .main-banner-list {
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 100%;
 }
 
 .main-banner-item {
-  float: left;
+  /* float: left; */
+  height: 856px;
 }
+
 .main-banner-item a {
   display: block;
-}
-.main-banner-item:nth-child(1) a {
-  background-image: url(images/main-banner01.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 0;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 856px;
 }
-.main-banner-item:nth-child(2) a {}
-.main-banner-item:nth-child(3) a {}
-.main-banner-item:nth-child(4) a {}
+.main-banner-item:nth-child(1) a {
+  background-image: url(images/main-banner01.jpg);
+}
+.main-banner-item:nth-child(2) a {
+  background-image: url(images/main-banner02.jpg);
+}
+
 /* e : #mainBannerSection.main-section01 */
 
 /* s : #introChildSection.main-section02 */
@@ -611,17 +609,35 @@ main {}
 }
 
 .support-slide-list {
+  width: 200vw;
   padding: 0;
 }
 
 .support-slide-item {
   width: 384px;
   height: 559px;
-  background-image: url(images/img_child_0.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
   position: relative;
+  float: left;
+  margin-right: 30px;
+}
+
+.support-slide-item:nth-child(1) {
+  background-image: url(images/img_child_0.png);
+}
+
+.support-slide-item:nth-child(2) {
+  background-image: url(images/img_child_1.png);
+}
+
+.support-slide-item:nth-child(3) {
+  background-image: url(images/img_child_2.png);
+}
+
+.support-slide-item:nth-child(4) {
+  background-image: url(images/img_child_3.png);
 }
 
 .support-slide-item-inner {
@@ -668,6 +684,7 @@ main {}
   height: 48px;
   background-repeat: no-repeat;
   background-position: 0 0;
+  margin-top: 100px;
 }
 
 .support-slide-move .prev {

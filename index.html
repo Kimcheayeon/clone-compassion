@@ -7,7 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
+  <!-- jQuery CND -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- slick slider -->
+  <script src="slick/slick.js"></script>
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
 </head>
 <body>
 
@@ -191,19 +197,10 @@
     <main>
       <section id="mainBannerSection" class="main-section01">
         <div class="main-banner-section-inner">
-          <div class="banner-btn-left"></div>
-          <div class="banner-btn-right"></div>
+          <!-- <div class="banner-btn-left"></div>
+          <div class="banner-btn-right"></div> -->
           <div class="main-banner-container">
             <ul class="main-banner-list">
-              <li class="main-banner-item">
-                <a href="#"></a>
-              </li>
-              <li class="main-banner-item">
-                <a href="#"></a>
-              </li>
-              <li class="main-banner-item">
-                <a href="#"></a>
-              </li>
               <li class="main-banner-item">
                 <a href="#"></a>
               </li>
@@ -299,7 +296,58 @@
                         <p class="support-btn"><a href="#" class="btn-transparent btn-hv-translate">자세히 보기</a></p>
                         <p class="support-btn"><a href="#" class="btn-blue btn-hv-blueback">바로 후원하기</a></p>
                       </div>
-                    </div></div>
+                    </div>
+                </li>
+                <li class="support-slide-item">
+                    <div class="support-slide-item-inner">
+                      <h4 class="support-slide-title">긴급재난 돕기</h4>
+                      <p class="support-slide-txt content-text">	  
+										    한 순간에 모든 것을 휩쓸어가는 자연 재해는 어른들이 견디기에도 힘든 일입니다. <br>
+                        재난이 주는 가혹한 현실 앞에, 어린이들이 다시 희망의 끈을 붙잡을 수 있도록 도와주세요.
+                      </p>
+                      <div class="support-btn-container">
+                        <p class="support-btn"><a href="#" class="btn-transparent btn-hv-translate">자세히 보기</a></p>
+                        <p class="support-btn"><a href="#" class="btn-blue btn-hv-blueback">바로 후원하기</a></p>
+                      </div>
+                    </div>
+                </li>
+                <li class="support-slide-item">
+                    <div class="support-slide-item-inner">
+                      <h4 class="support-slide-title">특별교육 지원하기</h4>
+                      <p class="support-slide-txt content-text">
+    										컴패션은 어린이들의 잠재력과 가능성을 바라봅니다. 직업훈련, 비정규교육, 입학 시험 등 기본적인 양육 외 추가적인 교육을 지원하여 스스로의 힘으로 가난에서 벗어날 수 있도록 함께해주세요.
+                      </p>
+                      <div class="support-btn-container">
+                        <p class="support-btn"><a href="#" class="btn-transparent btn-hv-translate">자세히 보기</a></p>
+                        <p class="support-btn"><a href="#" class="btn-blue btn-hv-blueback">바로 후원하기</a></p>
+                      </div>
+                    </div>
+                </li>
+                <li class="support-slide-item">
+                    <div class="support-slide-item-inner">
+                      <h4 class="support-slide-title">아픈 어린이 치료하기</h4>
+                      <p class="support-slide-txt content-text">
+    										아파도 병원에 갈 수 없는 어린이들이 있습니다. 갑자기 발생하는 병원비는 이들이 감당하기에 너무 큰 금액입니다.어린이들이 적절한 치료를 받고 일상으로 빠르게 복귀할 수 있도록 응원해주세요.
+                      </p>
+                      <div class="support-btn-container">
+                        <p class="support-btn"><a href="#" class="btn-transparent btn-hv-translate">자세히 보기</a></p>
+                        <p class="support-btn"><a href="#" class="btn-blue btn-hv-blueback">바로 후원하기</a></p>
+                      </div>
+                    </div>
+                </li>
+                <li class="support-slide-item">
+                    <div class="support-slide-item-inner">
+                      <h4 class="support-slide-title">아기와 엄마 살리기</h4>
+                      <p class="support-slide-txt content-text">
+    										유아 사망률이 높은 지역에서 태어난 아기들은<br>
+                        생후 1년만에 삶과 죽음이 결정됩니다. <br>
+                        가장 연약한 존재인 아기들에게 생명을 선물해주세요.
+                      </p>
+                      <div class="support-btn-container">
+                        <p class="support-btn"><a href="#" class="btn-transparent btn-hv-translate">자세히 보기</a></p>
+                        <p class="support-btn"><a href="#" class="btn-blue btn-hv-blueback">바로 후원하기</a></p>
+                      </div>
+                    </div>
                 </li>
               </ul>
               <div class="support-slide-move">
@@ -471,6 +519,16 @@
     <!-- 푸터 -->
   </div>
   
+  <script>
+    $('.main-banner-list').slick({
+      infinite: true,
+      arrows: true,
+      dots: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
